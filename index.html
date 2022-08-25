@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href= "Images/logo.png" type ="image/X-icon">
+    <title>QuickPic</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Back-to-Top-Button-Section -->
+    <i type="button" id = "toTop" class="fas fa-arrow-up" onclick="topFunction()" title="To Home"></i>
+
+    <!-- Navigation-Bar-Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <b>
+                    <span style="font-size: 45px;" class="title">
+                        <img src="Images/logo.png"  width="65" height="55" class="d-inline-block align-text-top" >&nbsp;
+                        <span class="title-word title-word-1">Q</span>
+                        <span class="title-word title-word-2">u</span>
+                        <span class="title-word title-word-3">i</span>
+                        <span class="title-word title-word-4">c</span>
+                        <span class="title-word title-word-1">k</span>
+                        <span class="title-word title-word-2">P</span>
+                        <span class="title-word title-word-3">i</span>
+                        <span class="title-word title-word-4">c</span>
+                    </span>
+                </b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Home">Home </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Album"> Albums </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact"> Help/Feedback </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact"> Submission </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home-Section -->
+    <div id="Home">
+        <marquee scrollamount="10">
+            <img src="Images/mist.jpeg">
+            <img src="Images/falls.jpg">
+            <img src="Images/mountainskies.png">
+            <img src="Images/nature.jpg">
+            <img src="Images/ocean.png">
+            <img src="Images/underwater.png">
+            <img src="Images/rocks.jpg">
+            <img src="Images/paris.png">
+            <img src="Images/wedding.png">
+        </marquee>
+    </div>
+    <h1 id="quote">
+        <br>" A camera is a SAVE button for the mind's eye. "
+    </h1>
+
+    <!-- Album-Section -->
+    <div id="Album">
+        <div class="child-page-listing">
+            <h1>Albums</h1>
+            <br>
+            <div class="grid-container">
+                <article id="3685" class="album-article">
+                    <a class="album-title" href="APIData.html" target="_blank">Nature</a>
+                    <div class="album-image">
+                        <img width="300" height="250" src="Images/NatureAlbum.jpg" alt="Nature">    
+                    </div>
+                </article>
+                <article id="3688" class="album-article">
+                    <a class="album-title" href="APIData.html" target="_blank">Tourism</a>
+                    <div class="album-image">
+                        <img width="300" height="250" src="Images/TourismAlbum.jpg" alt="Tourist Places">
+                    </div>
+                </article>
+            
+                <article id="3691" class="album-article">
+                    <a class="album-title" href="APIData.html" target="_blank">Festivals</a>
+                    <div class="album-image">
+                        <img width="300" height="250" src="Images/FestivalsAlbum.jpg" alt="Festivals">
+                    </div>
+                </article>
+            
+                <article id="3694" class="album-article">
+                    <a class="album-title" href="APIData.html" target="_blank">Occassion</a>
+                    <div class="album-image">
+                        <img width="300" height="250" src="Images/OccassionAlbum.jpg" alt="Occassion">  </a>
+                    </div>
+                </article>
+            
+                <article id="3697" class="album-article">
+                    <a class="album-title" href="APIData.html" target="_blank">Adventure</a>
+                    <div class="album-image">
+                        <img width="300" height="250" src="Images/AdventureAlbum.jpeg" alt="Adventure">
+                    </div>
+                </article>
+
+                <article id="3700" class="album-article">
+                    <a class="album-title" href="APIData.html" target="_blank">Fashion</a>
+                    <div class="album-image">
+                        <img width="300" height="250" src="Images/FashionAlbum.jpg" alt="Fashion">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact-Section -->
+    <div id="contact">
+        <div class="container">  
+            <form id="contact" action="" method="post" onsubmit="confirmAlert()">
+                <h3>QuickPic <span class="lineUp">Feedback/Submission</span> Form</h3>
+                <h4>Share your ideas and thoughts with us</h4>
+                <span>(Upload your Image here) <input type="file" required></span>
+                <br><br>
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4">
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+                <p class="copyright">Designed by <a href="#" title="Colorlib">QuickPic</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
